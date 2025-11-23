@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a [Genome](/public/banner.png)
 
-## Getting Started
+# 🧬 Genome — AI Chat Powered by Gemini API
 
-First, run the development server:
+Genome is a modern, minimalistic AI chat interface built on top of the **Gemini API**.  
+It offers real-time, context-aware conversations wrapped in a clean UI inspired by next-gen AI assistants.
+
+Genome focuses on performance, simplicity, and developer extensibility — making it easy to build your own AI features, tools, and workflows on top of Gemini.
+
+---
+
+## 🚀 Features
+
+- ⚡ **Real-time AI chat** using Gemini API
+- 🧠 **Multi-turn context** for coherent conversations
+- 🎨 **Modern UI** inspired by ChatGPT & Gemini
+- 🌗 **Dark-mode first** clean, futuristic theme
+- 🔌 **Extendable architecture** for custom tools & prompts
+- 📱 Fully **responsive design**
+- 🔐 Optional **auth-ready structure** if needed
+
+---
+
+## 🏗️ Tech Stack
+
+- **Next.js 15**
+- **React**
+- **Tailwind CSS v4**
+- **Gemini API (Google AI Studio)**
+- **TypeScript**
+- **shadcn/ui + Aceternity components (optional)**
+
+---
+
+## 📦 Installation
 
 ```bash
+git clone https://github.com/YOUR-USERNAME/genome.git
+cd genome
+npm install
+🔑 Environment Setup
+Create a .env.local file in the root:
+
+ini
+Copy code
+GEMINI_API_KEY=your_api_key_here
+Get your key from Google AI Studio.
+
+▶️ Run the Project
+bash
+Copy code
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+App runs at:
+
+arduino
+Copy code
+http://localhost:3000
+🧩 Project Structure
+bash
+Copy code
+/app
+  /api
+  /components
+  /contexts
+  /styles
+/public
+  favicon.ico
+  banner.png
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
