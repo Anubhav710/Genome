@@ -1,5 +1,4 @@
-This is a [Genome]
-(./public/banner.png)
+![Genome](/public/banner.png)
 
 # 🧬 Genome — AI Chat Powered by Gemini API
 
