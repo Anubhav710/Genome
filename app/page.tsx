@@ -41,7 +41,7 @@ export default function Home() {
 
   if (authLoading) {
     return (
-      <div className="flex h-screen items-center justify-center bg-[#131314]">
+      <div className="flex h-dvh items-center justify-center bg-[#131314]">
         <div className="spinner">
           <div></div>
           <div></div>
@@ -56,7 +56,7 @@ export default function Home() {
 
   if (!user) {
     return (
-      <div className="min-h-screen bg-[#131314] transition-colors duration-300 flex flex-col relative overflow-hidden">
+      <div className="min-h-dvh bg-[#131314] transition-colors duration-300 flex flex-col relative overflow-hidden">
         {/* Render 3D Background on Login too */}
         <Background3D isTyping={false} position={[0, 0, 0]} />
         <div className="absolute top-4 right-4 z-10">
@@ -70,9 +70,14 @@ export default function Home() {
   }
 
   return (
-    <div className="flex h-screen   bg-[#131314] text-gray-100 transition-colors duration-300 relative overflow-hidden ">
+    <div className="flex h-dvh   bg-[#131314] text-gray-100 transition-colors duration-300 relative overflow-hidden ">
       {/* 3D Background Layer */}
-      <Background3D position={[1, 0, 0]} />
+      <div className="hidden md:block">
+        <Background3D position={[1, 0, 0]} />
+      </div>
+      <div className="block md:hidden">
+        <Background3D position={[0, 0, 0]} />
+      </div>
 
       {/* Sidebar */}
       <Sidebar
